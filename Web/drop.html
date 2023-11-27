@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Current Drop </title>
+    <link rel="stylesheet" href="assets/css/styledrop.css">
+    <link rel="icon" type="image/jpg" href="assets/img/anarchyLogo-removebg-preview.png">
+    <script src="https://kit.fontawesome.com/66d16ca953.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Nunito:wght@200&family=Raleway:wght@200;300;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--
+        Implementaremos grid, para crear un Layout
+        -Navbar{
+            Marca, veremos si queda mejor con imagenes o con el nombre
+        }
+        - Seccion Principal ( Poleras ){
+
+            -Ideas:
+
+                +Pasarela de poleras tipo cards{
+                    1.-Animacion simple
+                    2.-Informacion{
+
+                    }
+                    +Bajo pasarela de poleras informacion de tallas{
+                        1.-Guia de tallas
+                    }
+                }
+
+                +Cards con poleras{
+                    1.-Animacion hover{
+
+                    }
+                    2.-Informacion{
+                        -Fit Polera
+                        -Precio
+                        -Boton o guia de tallas
+                        -Boton de comprar
+                    }
+                }
+        }
+        -Footer{
+            Alguna frase, tambien puede ser signo de marca registrada.
+        }
+        
+    -->
+    <div class="container">
+        <!--Seccion del header, donde ira o el nombre o logo de la marca-->
+        <header class="header">
+            <p>Anarchy Majin</p>
+        </header>
+        <!--Seccion carro de compra e iniciar sesion-->
+        <section class="carrito">
+            <!--Icono carrito-->
+            <div class="icon">
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                </a>
+            </div>
+
+            <!--Icono user-->
+            <div class="icon">
+                <a href="#">
+                    <i class="fa-solid fa-user fa-xl"></i>
+                </a>
+            </div>
+            
+        </section>
+        <!--Seccion de los productos-->
+        <main class="main_section">
+            <!--Producto 1-->
+            <div class="producto">
+                <img src="assets/img/IMG_7374.jpg" alt="" class="polera">
+                <div class="info_producto">
+                    <h3>Boxy Fit T-Shirt</h3>
+                    <p class="name_drop"> Gervonta Series</p>
+                    <p>21.990</p>
+                    <div class="boton">
+                        <a href="pago.html"> Agregar al carro </a> <!--agregar al carro-->
+                    </div>
+                </div>
+            </div>
+            <!--Producto 2-->
+            <div class="guia_de_tallas">
+                <h3>Guia De Tallas</h3>
+                <img src="assets/img/guiadetallas.png" alt="" class="guia_tallas">
+            </div>
+            <!--Producto 3-->
+            <div class="producto">
+                <img src="assets/img/IMG_7234.jpg" alt="">
+                <div class="info_producto">
+                    <h3>Boxy Fit T-Shirt</h3>
+                    <p class="name_drop"> Deftones Series</p>
+                    <p>21.990</p>
+                    <div class="boton">
+                        <a href="pago.html"> Agregar al carro </a> <!--Agregar al carro-->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--Seccion del footer-->
+        <footer class="footer">
+            <p>&copy;Anarchy Majin Since 2023</p>
+        </footer>
+    </div>
+</body>
+</html>

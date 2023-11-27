@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color:black;
+}
+.link{
+    background-color: white;
+    color: gray;
+    padding: 30px;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+.link > a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 300px;
+    height: auto;
+}
+/*Estilos para el logo giratorio*/
+.drop{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.logo{
+    animation: rotar 5s linear infinite;
+}
+.logo:hover{
+    cursor: pointer;
+}
+@keyframes rotar {
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(-180deg);
+    }
+}

@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px  10px 1fr 30px;
+    min-height: 100vh;
+    grid-template-areas: 
+    "header header header"
+    "carrito carrito carrito"
+    "contenido_principal contenido_principal contenido_principal"
+    "footer footer footer";
+}
+.header{
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header>p{
+    color: white;
+}
+.main_section{
+    grid-area: contenido_principal;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+.carrito{
+    /* border: 2px solid darkorange; */
+    padding: 10px;
+    margin: 50px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    grid-area: carrito;
+    gap: 20px;
+}
+
+/*Animacion para las poleras*/
+/* .polera{
+    animation: rotar 10s linear infinite;
+}
+.polera:hover{
+    cursor: pointer;
+}
+@keyframes rotar {
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(-180deg);
+    }
+} */
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 400ms ease;
+}
+.producto:hover{
+    transform: translateY(-3%);
+}
+.guia_de_tallas{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    gap: 10px;
+}
+.guia_de_tallas > h3{
+    margin-left: 15px;
+}
+
+.name_drop{
+    color: gray;
+}
+.boton{
+    background-color: black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    transition: all 150ms ease;
+}
+.boton > a{
+    color: white;
+    text-decoration: none;
+}
+.boton:hover{
+    background-color: gray;
+}
+.guia_tallas{
+    width: 400px;
+    height: auto;
+}
+.footer{
+    background-color: black;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer > p{
+    color: white;
+}
